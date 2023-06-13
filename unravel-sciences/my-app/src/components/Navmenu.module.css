@@ -1,0 +1,40 @@
+.Navmenu{
+    width: 200px;
+    height: 250px;
+    background-color: #EFDAD7;
+    position: fixed;
+    right: 20px;
+    z-index: 9000000000000000;
+    top: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Events{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+
+}
+
+.Team{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    margin-bottom: 22px;
+}
+
+.AboutUs{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    border-bottom: 2px solid black;
+}
+
+.Member{
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}

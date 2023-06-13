@@ -1,0 +1,405 @@
+.ClubSection{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(21, 114, 161, 0.9);
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+    /* background-color: beige; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.ContentSection{
+    align-self: center;
+    width: 40%;
+    height: 500px;
+    margin-left: 85px;
+    display: flex;
+    text-align: start;
+    color: white;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center; */
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 10px solid rebeccapurple; */
+    /* align-items: center; */
+    font-size: 2rem;
+}
+
+.Question{
+    position: absolute;
+    top: 200px;
+    width: 570px;
+    color: #EFDAD7;
+    /* font-size: 2.2rem; */
+    /* border: 4px solid white; */
+}
+
+.Answer{
+    position: absolute;
+    top: 390px;
+    width: 570px;
+    color: #E3BEC6;
+    /* border: 12px solid black; */
+}
+
+.ClubCards{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    /* background-color: antiquewhite; */
+    margin-right: 30px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 4rem; */
+    /* background-color: burlywood; */
+}
+
+.NextCard{
+    /* border: 2px solid beige; */
+    height: 100px;
+    width: 100px;
+}
+
+.NextCard:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1149px) {
+    .ClubSection{
+        /* border: 2px solid rebeccapurple; */
+        gap: 250px;
+    }
+
+    .ClubCards{
+        /* border: 2px solid red; */
+        padding-left: 60px;
+        width: 55%;
+    }
+
+    .ContentSection{
+        width: 30%;
+        /* border: 2px solid black; */
+    }
+
+    .Question{
+        font-size: 3rem;
+        width: 400px;
+    }
+    
+    .Answer{
+        top: 350px;
+        font-size: 1.4rem;
+        width: 400px;
+    }
+}
+
+.ClubSection_Mobile{
+    display: none;
+}
+
+@media (max-width: 898px) {
+    .ClubSection{
+        display: none;
+    }
+
+    .ClubSection_Mobile{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        height: 240vh;
+        flex-direction: column;
+        background-color:  rgba(21, 114, 161, 0.9);
+        /* border-radius: 20px; */
+    }
+
+    .ClubContent_Mobile{
+        height: 250px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* border: 2px solid black; */
+    }
+
+    .ClubsHeading_Mobile{
+        font-size: 2.6rem;
+        color: #EFDAD7;
+        
+    }
+
+    .QuesCardOne{
+        height: 100%;
+        width: 33.33%;
+        background-color: #E3BEC6;
+        border-right: 2px solid black;
+        font-size: 1.2rem;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        padding-top: 70px;
+        
+        border-radius: 20px 0 0 20px;
+    }
+
+    .QuesCardOne > h4{
+        /* border: 2px solid red; */
+        height: fit-content;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    /* .QuesCardOne > h4, .QuesCardTwo >h4, .QuesCardThree > h4{
+        border: 2px solid red;
+        padding: 15px;
+        overflow: hidden;
+    }
+      */
+
+    
+
+    .QuesCardTwo{
+        height: 100%;
+        width: 33.33%;
+        background-color: #E3BEC6;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 2px solid black;
+        font-size: 1.2rem;
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding-top: 70px;
+    }
+
+    .QuesCardTwo > h4{
+        overflow: hidden;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .QuesCardThree{
+        height: 100%;
+        width: 33.33%;
+        background-color: #E3BEC6;
+        flex-direction: column;
+        font-size: 1.2rem;
+        display: flex;
+        padding-left: 10px;
+        position: relative;
+        padding-right: 10px;
+        align-items: center;
+        padding-top: 70px;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .QuesCardThree > h4{
+        overflow: hidden;
+        padding: 10px;
+        height: fit-content;
+    }
+
+
+    .ClubCards_Mobile{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        /* color: #E3BEC6; */
+    }
+
+    
+}
+
+@media (max-width: 631px) {
+    .ClubSection_Mobile{
+        height: 260vh;
+    }
+
+     .ClubsHeading_Mobile{
+        padding: 20px;
+    }
+
+    .QuesCardOne > h4{
+        position: absolute;
+        top: 50px;
+    }
+
+    /* .QuesCardOne > p{
+        /* border: 2px solid red; */
+        
+  
+
+    .QuesCardTwo > h4{
+        position: absolute;
+        top: 50px;
+    } 
+
+    .QuesCardThree > h4{
+        position: absolute;
+        top: 50px;
+    }
+
+    
+
+    /* div > h4{
+        font-size: 1.2rem;
+    } */
+
+    div > p {
+        font-size: 1rem;
+        text-align: left;
+     }
+}
+
+@media (max-width: 580px) {
+    div > p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 401px) {
+
+    div > p{
+        font-size: 0.8rem;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: left;
+    }
+}
+
+.ClubContent_MobileTwo{
+    display: none;
+}
+
+@media (max-width: 374px) {
+    .ClubContent_Mobile{
+        display: none;
+    }
+
+    .ClubContent_MobileTwo{
+        /* display: block; */
+        height: 300px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        /* border: 2px solid red; */
+        margin-bottom: 20px;
+    }
+
+    
+
+    .ClubContent_One > h4 {
+        position: absolute;
+        
+        align-self: center;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_One > p {
+        width: 60%;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_Two > h4 {
+        position: absolute;
+        
+        align-self: center;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_Two > p {
+        width: 60%;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_Three > h4 {
+        position: absolute;
+        
+        align-self: center;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_Three > p {
+        width: 60%;
+        /* border: 2px solid red; */
+    }
+
+    .ClubContent_One{
+        width: 100%;
+        height: 100px;
+        /* position: relative; */
+        background-color: beige;
+        border-radius: 20px 20px 0 0;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ClubContent_Two{
+        width: 100%;
+        height: 100px;
+        background-color: beige;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ClubContent_Three{
+        width: 100%;
+        height: 100px;
+        background-color: beige;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border-bottom: 2px solid black; */
+    }
+}
+
+
+@media (max-width: 367px) {
+    .ClubSection_Mobile{
+        height: 2500px;
+    }
+
+    .ClubContent_One{
+        height: 80px;
+        background-color: #E3BEC6;
+    }
+
+    .ClubContent_Two{
+        height: 80px;
+        background-color: #E3BEC6;
+
+    }
+
+    .ClubContent_Three{
+        height: 80px;
+        background-color: #E3BEC6;
+
+    }
+
+    
+}

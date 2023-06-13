@@ -1,0 +1,68 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    align-items: center;
+    padding: 20px 90px;
+    font-size: 1.4rem;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #EFDAD7;
+    z-index: 20000000;
+    height: 70px;
+
+}
+
+.Logo{
+    font-size: 1.4rem;
+}
+
+.NavItems{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.NavItem_Member{
+    background-color: #9AD0EC;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(34, 33, 33);
+    cursor: pointer;
+}
+
+.Hamburger_Icon{
+    display: none;
+
+}
+
+@media (max-width: 898px) {
+    .Hamburger_Icon{
+        display: flex;
+    }
+
+    .NavItems{
+        display: none;
+    }
+
+    .Navbar{
+        padding: 20px 30px;
+    }
+
+
+}
+
+.HamburgerMenu{
+    display: none;
+}
+
+@media (max-width: 367px) {
+    .Navbar{
+        height: 45px;
+        padding: 5px 20px;
+    }
+}

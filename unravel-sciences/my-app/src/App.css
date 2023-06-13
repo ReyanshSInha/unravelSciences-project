@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400&display=swap');
+
+*{
+  box-sizing: border-box;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #E8F9FD;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.background{
+  width: 100vw;
+  height: 100vw;
+  background-color: black;
+}

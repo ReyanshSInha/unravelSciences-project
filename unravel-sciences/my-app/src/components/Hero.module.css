@@ -1,0 +1,486 @@
+.HeroSection{
+    width: 100vw;
+    height: 80vh;
+    background-color: #1572A1;
+    display: flex;
+    gap: 20px;
+    
+    justify-content: center;
+    align-items: flex-start;
+    transition: all;
+    overflow: hidden;
+}
+
+.ContentSection{
+    align-self: center;
+    width: 40%;
+    height: 500px;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    /* background-color: wheat; */
+    display: flex;
+    text-align: start;
+    color: #EFDAD7;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center; */
+    padding-top: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 100px;
+    /* align-items: center; */
+    font-size: 2rem;
+}
+
+.JoinUS{
+    background-color: #EFDAD7;
+    color: #151517;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 7px 60px;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.QuestionTitle{
+    font-size: 2.8rem;
+}
+
+.EventsSection{
+    align-self: center;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    /* background-color: burlywood; */
+    /* display: flex; */
+    border-radius: 10px;
+    justify-content: center;
+    /*align-items: center; */
+    font-size: 4rem;
+    overflow: hidden;
+    /* border: 5px solid red; */
+}
+
+.InactiveLeft{
+    top: 95px;
+    left: 50%;
+    transform: translatex(-120%);
+    position: absolute;
+    width: 240px;
+    height: 260px;
+    background-color: #EFDAD7;
+    border-radius: 20px;
+    border: 2px solid #1572A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Active{
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2px 0.2px;
+    height: 260px;
+    z-index: 2000;
+    border-radius: 20px;
+    border: 2px solid #1572A1;
+    background-color: #EFDAD7;
+}
+
+.InactiveRight{
+    top: 95px;
+    left: 50%;
+    transform: translateX(20%);
+    position: absolute;
+    width: 240px;
+    height: 260px;
+    border-radius: 20px;
+    border: 2px solid #1572A1;
+    background-color: #EFDAD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageTitle{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    color: #EFDAD7;
+    transform: translateX(-50%);
+    font-size: 2.4rem;
+    /* border: 2px solid black; */
+    font-weight: 600;
+}
+
+.HeroSection_Mobile{
+    display: none;
+}
+
+@media (max-width: 1351px) {
+    .QuestionTitle{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    .Active{
+        width: 220px;
+        height: 240px;
+    }
+
+    .InactiveLeft{
+        width: 220px;
+        height: 240px;
+    }
+
+    .InactiveRight{
+        width: 220px;
+        height: 240px;
+    }
+
+    .ImageTitle{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 1096px) {
+    .QuestionTitle{
+        font-size: 2.5rem;
+    }
+
+    .ImageTitle{
+        font-size: 2rem;
+    }
+
+    .Typewriter{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1070px) {
+    .Active{
+        width: 200px;
+        height: 220px;
+    }
+
+    .InactiveLeft{
+        width: 200px;
+        height: 220px;
+    }
+
+    .InactiveRight{
+        width: 200px;
+        height: 220px;
+    }
+
+    .ImageTitle{
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 975px) {
+    .Active{
+        top: 100px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .InactiveLeft{
+        top: 105px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .InactiveRight{
+        top: 105px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .ImageTitle{
+        font-size: 2rem;
+    }
+
+    .QuestionTitle{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (max-width: 898px) {
+    .HeroSection{
+        flex-direction: column-reverse;
+        overflow: scroll;
+        height: 120vh;
+    }
+
+    .Typewriter{
+        opacity: 0;
+    }
+
+    .Active{
+        top: 50px;
+        width: 240px;
+        height: 260px;
+    }
+
+    .InactiveLeft{
+        top: 70px;
+        width: 240px;
+        height: 260px;
+    }
+
+    .InactiveRight{
+        top: 70px;
+        width: 240px;
+        height: 260px;
+    }
+
+    .ImageTitle{
+        font-size: 2rem;
+        top: 350px;
+    }
+
+    .ContentSection{
+        width: 80%;
+        height: 40%;
+        margin-bottom: 10px;
+        align-items: center;
+        padding-top: 30px;
+    }
+    p{
+        text-align: center;
+    }
+
+    .EventsSection{
+        margin-top: 100px;
+        height: 60%;
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 724px) {
+    .Active{
+        top: 40px;
+        width: 220px;
+        height: 240px;
+    }
+
+    .InactiveLeft{
+        top: 60px;
+        width: 220px;
+        height: 240px;
+    }
+
+    .InactiveRight{
+        top: 60px;
+        width: 220px;
+        height: 240px;
+    }
+
+    .ImageTitle{
+        top: 350px;
+        
+    }
+
+    .ContentSection{
+        /* padding-top: 200px; */
+        /* border: 2px solid beige; */
+        margin-top: -140px;
+    }
+}
+
+@media (max-width: 666px) {
+    .Active{
+        top: 40px;
+        width: 200px;
+        height: 220px;
+    }
+
+    .InactiveLeft{
+        top: 60px;
+        width: 200px;
+        height: 220px;
+    }
+
+    .InactiveRight{
+        top: 60px;
+        width: 200px;
+        height: 220px;
+    }
+
+    .ImageTitle{
+        top: 310px;
+    }
+}
+
+@media (max-width: 612px) {
+    .Active{
+        top: 10px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .InactiveLeft{
+        top: 30px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .InactiveRight{
+        top: 30px;
+        width: 180px;
+        height: 200px;
+    }
+
+    .ImageTitle{
+        top: 280px;
+        font-size: 1.7rem;
+    }
+
+    .ContentSection{
+        margin-top: -220px;
+    }
+}
+
+@media (max-width: 547px) {
+    .InactiveLeft{
+        display: none;
+    }
+
+    .InactiveRight{
+        display: none;
+    }
+
+    .HeroSection{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 547px) {
+    
+    .HeroSection{
+        display: none;
+    }
+
+    .HeroSection_Mobile{
+        width: 100vw;
+        height: 100vh;
+        background-color: #1572A1;
+    }
+
+    .MainHeading_Mobile{
+        margin-top: 100px;
+        color: #EFDAD7;
+        margin-left: 30px;
+        font-size: 2.4rem;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .AnimationSection_Mobile{
+        width: 60%;
+        height: 300px;
+        background-color: #E3BEC6;
+        margin-left: 30px;
+        margin-top: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EventSection_Mobile{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .TitleText_Mobile{
+        margin-left: 30px;
+        margin-top: 30px;
+        color: #EFDAD7;
+        font-size: 2.4rem;
+    }
+
+    .HeroSection_Mobile{
+        display: block;
+    }
+
+    
+
+}
+
+@media (max-width: 364px) {
+    .TitleText_Mobile{
+        font-size: 2.2rem;
+        color: #EFDAD7;
+    }
+
+    .MainHeading_Mobile{
+        font-size: 1.8rem;
+        color: #EFDAD7;
+    }
+}
+
+@media (max-width: 367px) {
+
+    .HeroSection_Mobile{
+        height: 500px;
+    }
+
+    .MainHeading_Mobile{
+        font-size: 1.6rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .EventSection_Mobile{
+        gap: 10px;
+        justify-content: center;
+        margin-left: -30px;
+    }
+
+    .AnimationSection_Mobile{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .NextBtnMobile{
+        display: none;
+    }
+
+    .TitleDivMobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TitleText_Mobile{
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+        /* border: 2px solid black; */
+        width: 80%;
+        /* align-self: center; */
+    }
+}

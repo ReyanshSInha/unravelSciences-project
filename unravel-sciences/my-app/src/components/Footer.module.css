@@ -1,0 +1,24 @@
+.Footer{
+    height: 150px;
+    width: 100vw;  
+    font-size: 1.4rem;
+    background-color: #E3BEC6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.SocialIcons{
+    display: flex;
+    gap: 10px;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 520px) {
+    .Footer{
+        height: 180px;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+    }
+}

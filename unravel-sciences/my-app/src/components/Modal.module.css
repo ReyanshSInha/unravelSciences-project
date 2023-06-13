@@ -1,0 +1,179 @@
+.Modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    background-color: rgba(160, 160, 162, 0.6);
+}
+
+.cardDetails{
+    background-color: rgb(255, 254, 254);
+    position: fixed;
+    z-index: 21000;
+    top: 200px;
+    height: 400px;
+    width: 45%;
+    border: 3px solid rgb(18, 18, 18);
+    border-radius: 20px;
+    left: 40px;
+}
+
+.cardDetails > h3{
+    text-align: center;   
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+
+.ModalContent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+.ModalContent > p{
+    margin-left: 5px;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    width: 55%;
+}
+
+.JoinSection{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.JoinClubBtn{
+    width: 80px;
+    height: 30px;
+    background-color: #1572A1;
+    color: whitesmoke;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.cardDetails_Mobile{
+    display: none;
+}
+
+/* mobile  */
+
+@media (max-width: 898px) {
+
+    .cardDetails{
+        display: none;
+    }
+
+    .cardDetails_Mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 254, 254);
+        position: fixed;
+        /* position: absolute; */
+        z-index: 21000;
+        top: 150px;
+        /* transform: translateY(-50%); */
+        max-height: 500px;
+        width: 65%;
+        bottom: 100px;
+        border: 3px solid rgb(18, 18, 18);
+        border-radius: 20px;
+        left: 17%;
+        
+    }
+
+    .cardDetails_Mobile > h3{
+        font-size: 1.2rem;
+        height: 50px;
+        /* text-align: center; */
+        margin-top: 20px;
+    }
+
+    .ModalContent_Mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .CardLogo_Mobile{
+        /* border: 10px solid red; */
+        overflow: hidden;
+        width: fit-content;
+       margin-top: 13px;
+       margin-bottom: 20px;
+    }
+
+    .ModalContent_Mobile > p{
+        width: 80%;
+        /* border: 2px solid red; */
+        font-size: 1.2rem;
+    }
+
+    .JoinSection_Mobile{
+        background-color: #1572A1;
+        width: 120px;
+        height: 30px;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .JoinClubBtn_Mobile{
+        color: whitesmoke;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    .cardDetails_Mobile{
+        width: 90%;
+        left: 4.5%;
+    }
+}
+
+@media (max-width: 301px) {
+    .cardDetails_Mobile{
+        width: 90%;
+        left: 4.5%;
+    }
+    
+    .cardDetails_Mobile > h3{
+        font-size: 1.1rem;
+        /* text-align: center; */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 35px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 236px) {
+    .cardDetails_Mobile > h3{
+        font-size: 0.8rem;
+        /* text-align: center; */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 35px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 277px) {
+    
+}
